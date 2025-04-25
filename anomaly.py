@@ -1,15 +1,6 @@
 {
  "cells": [
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "010d9454",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "\n"
-   ]
-  },
+  
   {
    "cell_type": "code",
    "execution_count": 4,
