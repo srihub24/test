@@ -21,4 +21,4 @@ if uploaded_file:
   df['AnomalyScore'] = iso_forest.decision_function(X_scaled)
   df['IsAnomaly'] = iso_forest.predict(X_scaled)
   st.write(df[df['IsAnomaly']==-1])
-  st.write(df[df['IsAnomaly']==-1].count())
+  st.write((df['IsAnomaly']==-1).sum())
