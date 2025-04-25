@@ -14,6 +14,7 @@ if uploaded_file:
 # Standardize the features 
   scaler = StandardScaler()
   X_scaled = scaler.fit_transform(X)
+  st.write("Standardizing the data using StandardScaler")
   st.write(X_scaled)
   iso_forest = IsolationForest(n_estimators=100, contamination=0.05, random_state=42)
   iso_forest.fit(X_scaled)
