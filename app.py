@@ -6,6 +6,7 @@ st.title("Anomaly detection")
 uploaded_file=st.file_uploader("Upload your file here")
 if uploaded_file:
   df=pd.read_csv(uploaded_file)
+  st.write("Statistical Information of the data")
   st.write(df.describe())
   features = ['TransactionAmount', 'TransactionDuration', 'AccountBalance', 'LoginAttempts']  # Modify as needed
   X = df[features].copy()
