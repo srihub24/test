@@ -20,5 +20,7 @@ if uploaded_file:
 # Predict anomalies
   df['AnomalyScore'] = iso_forest.decision_function(X_scaled)
   df['IsAnomaly'] = iso_forest.predict(X_scaled)
+  st.write("Fraud tranactions")
   st.write(df[df['IsAnomaly']==-1])
+  st.write("Number of Fraud transactions")
   st.write((df['IsAnomaly']==-1).sum())
