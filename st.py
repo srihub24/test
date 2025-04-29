@@ -1,7 +1,5 @@
 import streamlit as st
 st.title("Streamlit File")
 st.write('hello')
-st.file_uploader("Upload your files here")
-a=st.text_input("Enter a")
-st.write(a)
-st.download_button('Download The File',a)
+f=st.file_uploader("Upload your files here")
+st.download_button('Download The File',f)
