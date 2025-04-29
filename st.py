@@ -1,5 +1,7 @@
 import streamlit as st
+import pandas as pd
 st.title("Streamlit File")
 st.write('hello')
 f=st.file_uploader("Upload your files here")
-st.download_button('Download The File',f)
+res=pd.read_csv(f)
+st.download_button('Download The File',res)
